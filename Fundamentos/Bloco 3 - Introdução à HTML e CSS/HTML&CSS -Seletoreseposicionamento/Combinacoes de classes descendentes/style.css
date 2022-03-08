@@ -1,0 +1,54 @@
+li, a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+ul li{
+    background-color: yellow;
+}
+
+li:nth-child(even){
+    color: green;
+}
+li:nth-child(odd){
+    text-transform: uppercase;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: red;
+}
+h1>em,h2>em,h3>em,h4>em{
+    font-size: 40px;
+    border: 1px solid black;
+}
+li{
+    font-size: 20px;
+}
+li>em{
+    font-weight: bold;
+}
+ul>:nth-child(-n+3){
+    color: blue;
+}
+li.java{
+    background-color: pink;
+}
+
+ul.desenvolve li:hover:first-child{
+    background-color: orange;
+}
+ul.desenvolve li:hover:nth-child(2){
+    background-color: green;
+}
+ul.desenvolve li:hover:nth-child(3){
+    background-color: black;
+}
+ul.desenvolve li:hover:nth-child(3) a{
+    color: white;
+}
+ul.desenvolve li:hover:nth-child(4){
+    background-color: white;
+}
+ul.desenvolve li:hover:last-child{
+    background-color: green;
+}

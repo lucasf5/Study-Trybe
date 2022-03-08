@@ -1,0 +1,22 @@
+h1, p{
+    text-align: center;
+}
+ol{
+    list-style: none;
+}
+ol:hover{
+    background-color: aqua;
+    transition: 1s background;
+}
+a {
+    background-color: orange;
+    text-decoration: none;
+}
+a:visited {
+    border-color: cyan;
+    color: black; 
+}
+a:hover{
+    text-decoration: none;
+    color: red;
+}
