@@ -33,8 +33,14 @@ console.log(media/numbers.length);
 
 // Utilizando for , descubra qual o maior valor contido no array e imprima-o;
 
-const maximo = Math.max(...numbers);
-console.log(maximo);
+let item = 0
+
+for (let i of numbers) {
+    if (i > item) {
+        item = i
+    }
+}
+console.log(item);
 
 // Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado";
 let numero = 0
@@ -52,8 +58,14 @@ if (numero == 0) {
 
 // Utilizando for , descubra qual o menor valor contido no array e imprima-o;
 
-const minimo = Math.min(...numbers);
-console.log(minimo);
+let itemMinimo = numbers[0]
+
+for (let i of numbers) {
+    if (i < itemMinimo) {
+        itemMinimo = i
+    }
+}
+console.log(itemMinimo);
 
 
 // Utilizando for , crie um array que vá de 1 até 25 e imprima o resultado;
