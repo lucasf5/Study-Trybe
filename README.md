@@ -1,6 +1,6 @@
 # Trybe
 ![](https://i.imgur.com/waxVImv.png)
-Exercícios e anotações da Trybe 
+### Exercícios e anotações da Trybe 
 ![](https://i.imgur.com/waxVImv.png)
 
 ## Fundamentos do Desenvolvimento Web
