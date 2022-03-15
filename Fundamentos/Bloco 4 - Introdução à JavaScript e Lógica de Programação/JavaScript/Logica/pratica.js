@@ -47,6 +47,7 @@ function primeNumber(num) {
         let primo = true;
 
         // ! Verificando se o numero é divisivel por qualquer numero que não seja 1 ou ele mesmo. Pois todos são:
+
         for (let x = 2; x < i; x++){
             if (i % x === 0) {
                 primo = false
