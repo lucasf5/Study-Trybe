@@ -186,14 +186,14 @@ eventos.forEach((item) => {
     let input = document.querySelector("#task-input")
     const botaoInput = document.querySelector("#btn-add")
     botaoInput.addEventListener(item, () => {
-        let inputValue = input.value;
-        if (inputValue == "") {
+        if (input.value == "") {
             alert("Campo de compromissos vazio!")
         } else {
             const compromissos = document.querySelector(".compromissos")
             const li = document.createElement("li")
-            li.innerText = inputValue
+            li.innerText = input.value
             compromissos.appendChild(li)
+            input.value = ""
         }
     })
     input.addEventListener(item, (evento) => {
