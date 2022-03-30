@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Texto Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="texto-creator">
+        <form id="controles">
+            <label for="texto">texto</label>
+            <input type="text" name="texto" id="texto">
+
+            <label for="color">color</label>
+            <input type="color" name="color" id="color">
+
+            <label for="word-spacing">word-spacing</label>
+            <input type="range" name="wordSpacing" id="word-spacing" min="0" max="100">
+
+            <label for="letter-spacing">letter-spacing</label>
+            <input type="range" name="letterSpacing" id="letter-spacing" min="0" max="100">
+
+            <label for="textTransform">Text Transform</label>
+            <select name="textTransform" id="textTransform">
+                <option value="lowercase">lowercase</option>
+                <option value="capitalize">capitalize</option>
+                <option value="uppercase">uppercase</option>
+            </select>
+
+            <label for="fontFamily">Font Family</label>
+            <select name="fontFamily" id="fontFamily">
+                <option value="Georgia">Georgia</option>
+                <option value="monospace">Monospace</option>
+            </select>
+
+            <label for="fontSize">font-size</label>
+            <input type="number" name="fontSize" id="fontSize">
+
+        </form>
+
+        <section class="resultado">
+            <p class="btn">resultado</p>
+            <pre>
+          <code class="css"></code>
+        </pre>
+        </section>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
