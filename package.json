@@ -1,0 +1,23 @@
+{
+  "name": "trybe",
+  "version": "1.0.0",
+  "description": "![](https://i.imgur.com/waxVImv.png) ### Exercícios e anotações da Trybe  ![](https://i.imgur.com/waxVImv.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasf5/Trybe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasf5/Trybe/issues"
+  },
+  "homepage": "https://github.com/lucasf5/Trybe#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
