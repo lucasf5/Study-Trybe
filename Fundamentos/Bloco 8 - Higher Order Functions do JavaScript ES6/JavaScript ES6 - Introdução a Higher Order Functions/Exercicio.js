@@ -1,16 +1,23 @@
-// 1 - Crie uma função que retorne um objeto no formato { nomeCompleto, email } representando uma nova pessoa contratada. Passe sua função como parâmetro da HOF newEmployees para criar cada pessoa contratada em seu respectivo id . A sua função deve receber como parâmetro o nome completo da pessoa funcionária e a partir dele gerar automaticamente um email no formato nome_da_pessoa@trybe.com .
-
-const newEmployees = (nome) => {
-    const string = nome.replace(' ', "-")
+// Q1
+const newEmployees = (registro) => {
   const employees = {
-    nome,
-    email: string + "@trybe.com"
+    id1: registro("Pedro Guerra"), 
+    id2: registro("Luiza Drumond"), 
+    id3: registro("Carla Paiva"),
   }
   return employees;
 };
+const registro = (nome) => {
+    const string = nome.replace(' ', "_").toLowerCase()
+    return {
+    nome,
+    email: string + "@trybe.com"
+  }
+};
 
-console.log(newEmployees("Lucas Ferreira"));
+console.log(newEmployees(registro));
 
+// Q2
 const numeroAleatorio = () =>{
     return Math.ceil(Math.random() * 5)
 }
@@ -25,7 +32,7 @@ const checaVitoria = (chute, valorAleatorio) =>{
 
 checaVitoria(3, numeroAleatorio)
 
-
+// Q3
 const RIGHT_ANSWERS =   ['A',  'C',  'B', 'D', 'A', 'A',  'D',  'A', 'D', 'C'];
 const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 let notaFinal = 0;
